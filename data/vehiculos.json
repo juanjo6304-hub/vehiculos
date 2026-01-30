@@ -1,16 +1,632 @@
 [
   {
-    "nombre": "Vehículo 1",
+    "id": 1,
+    "nombre": "Ford Escort Cosworth WRC",
     "imagen": "vehiculo_1.jpg",
     "marca": "Ford",
-    "modelo": "Focus",
-    "año": 2020
+    "modelo": "Escort Cosworth WRC",
+    "tecnologia": "Analógico",
+    "fabricante": "SuperSlot",
+    "referencia": "H4426"
   },
   {
-    "nombre": "Vehículo 2",
+    "id": 2,
+    "nombre": "BMW M6 GT3",
     "imagen": "vehiculo_2.jpg",
+    "marca": "BMW",
+    "modelo": "M6 GT3",
+    "tecnologia": "Analógico",
+    "fabricante": "Carrera",
+    "referencia": "20027660"
+  },
+  {
+    "id": 3,
+    "nombre": "Porsche 935 GT2",
+    "imagen": "vehiculo_3.jpg",
+    "marca": "Porsche",
+    "modelo": "935 GT2",
+    "tecnologia": "Analógico",
+    "fabricante": "Carrera",
+    "referencia": "20027653"
+  },
+  {
+    "id": 4,
+    "nombre": "KTM X BOW GT2",
+    "imagen": "vehiculo_4.jpg",
+    "marca": "KTM",
+    "modelo": "X BOW GT2",
+    "tecnologia": "Analógico",
+    "fabricante": "Carrera",
+    "referencia": "20027688"
+  },
+  {
+    "id": 5,
+    "nombre": "Ferrari 488 GT3",
+    "imagen": "vehiculo_5.jpg",
+    "marca": "Ferrari",
+    "modelo": "488 GT3",
+    "tecnologia": "Analógico",
+    "fabricante": "Carrera",
+    "referencia": "488 GT3"
+  },
+  {
+    "id": 6,
+    "nombre": "Lamborghini Huracán GT3",
+    "imagen": "vehiculo_6.jpg",
+    "marca": "Lamborghini",
+    "modelo": "Huracán GT3",
+    "tecnologia": "Analógico",
+    "fabricante": "Carrera",
+    "referencia": "20027662"
+  },
+  {
+    "id": 7,
+    "nombre": "Ferrari 365 P2",
+    "imagen": "vehiculo_7.jpg",
+    "marca": "Ferrari",
+    "modelo": "365 P2",
+    "tecnologia": "Analógico",
+    "fabricante": "Carrera",
+    "referencia": "20027652"
+  },
+  {
+    "id": 8,
+    "nombre": "Ford Capri Zakspeed Turbo",
+    "imagen": "vehiculo_8.jpg",
+    "marca": "Ford",
+    "modelo": "Capri Zakspeed Turbo",
+    "tecnologia": "Analógico",
+    "fabricante": "Carrera",
+    "referencia": "20027647"
+  },
+  {
+    "id": 9,
+    "nombre": "BMW 320 Turbo",
+    "imagen": "vehiculo_9.jpg",
+    "marca": "BMW",
+    "modelo": "320 Turbo",
+    "tecnologia": "Analógico",
+    "fabricante": "Carrera",
+    "referencia": "20027679"
+  },
+  {
+    "id": 10,
+    "nombre": "Audi RS5 DTM",
+    "imagen": "vehiculo_10.jpg",
+    "marca": "Audi",
+    "modelo": "RS5 DTM",
+    "tecnologia": "Analógico",
+    "fabricante": "Carrera",
+    "referencia": "20027634"
+  },
+  {
+    "id": 11,
+    "nombre": "BMW M4 DTM",
+    "imagen": "vehiculo_11.jpg",
+    "marca": "BMW",
+    "modelo": "M4 DTM",
+    "tecnologia": "Analógico",
+    "fabricante": "Carrera",
+    "referencia": "20027571"
+  },
+  {
+    "id": 12,
+    "nombre": "Mercedes AMG C63 DTM",
+    "imagen": "vehiculo_12.jpg",
+    "marca": "Mercedes",
+    "modelo": "AMG C63 DTM",
+    "tecnologia": "Analógico",
+    "fabricante": "Carrera",
+    "referencia": "20027667"
+  },
+  {
+    "id": 13,
+    "nombre": "Porsche 918 Spyder",
+    "imagen": "vehiculo_13.jpg",
+    "marca": "Porsche",
+    "modelo": "918 Spyder",
+    "tecnologia": "Analógico",
+    "fabricante": "Carrera",
+    "referencia": "20027599"
+  },
+  {
+    "id": 14,
+    "nombre": "Seat 600",
+    "imagen": "vehiculo_14.jpg",
     "marca": "Seat",
-    "modelo": "Ibiza",
-    "año": 2019
+    "modelo": "600",
+    "tecnologia": "Analógico",
+    "fabricante": "Reprotec",
+    "referencia": "RT/1958"
+  },
+  {
+    "id": 15,
+    "nombre": "Audi R8 LMS GT3",
+    "imagen": "vehiculo_15.jpg",
+    "marca": "Audi",
+    "modelo": "R8 LMS GT3",
+    "tecnologia": "Analógico",
+    "fabricante": "Scalextric",
+    "referencia": "U10387S300"
+  },
+  {
+    "id": 16,
+    "nombre": "Chevrolet Corvette C8R",
+    "imagen": "vehiculo_16.jpg",
+    "marca": "Chevrolet",
+    "modelo": "Corvette C8R",
+    "tecnologia": "Analógico",
+    "fabricante": "Scalextric",
+    "referencia": "U10426S300"
+  },
+  {
+    "id": 17,
+    "nombre": "Chevrolet Corvette C8R",
+    "imagen": "vehiculo_17.jpg",
+    "marca": "Chevrolet",
+    "modelo": "Corvette C8R",
+    "tecnologia": "Analógico",
+    "fabricante": "Scalextric",
+    "referencia": "U10427S300"
+  },
+  {
+    "id": 18,
+    "nombre": "Mercedes AMG GT3",
+    "imagen": "vehiculo_18.jpg",
+    "marca": "Mercedes",
+    "modelo": "AMG GT3",
+    "tecnologia": "Analógico",
+    "fabricante": "Scalextric",
+    "referencia": "U10386S300"
+  },
+  {
+    "id": 19,
+    "nombre": "Mercedes SLS GT3",
+    "imagen": "vehiculo_19.jpg",
+    "marca": "Mercedes",
+    "modelo": "SLS GT3",
+    "tecnologia": "Analógico",
+    "fabricante": "Scalextric",
+    "referencia": "A10202S300"
+  },
+  {
+    "id": 20,
+    "nombre": "Audi S1 WRX",
+    "imagen": "vehiculo_20.jpg",
+    "marca": "Audi",
+    "modelo": "S1 WRX",
+    "tecnologia": "Analógico",
+    "fabricante": "Scalextric",
+    "referencia": "U10388S300"
+  },
+  {
+    "id": 21,
+    "nombre": "Hyundai i20 RX",
+    "imagen": "vehiculo_21.jpg",
+    "marca": "Hyundai",
+    "modelo": "i20 RX",
+    "tecnologia": "Analógico",
+    "fabricante": "Scalextric",
+    "referencia": "U10392X300"
+  },
+  {
+    "id": 22,
+    "nombre": "Seat León Fuel",
+    "imagen": "vehiculo_22.jpg",
+    "marca": "Seat",
+    "modelo": "León Fuel",
+    "tecnologia": "Analógico",
+    "fabricante": "Scalextric",
+    "referencia": "1 Exclusivo Circuito"
+  },
+  {
+    "id": 23,
+    "nombre": "Seat León e-Racer",
+    "imagen": "vehiculo_23.jpg",
+    "marca": "Seat",
+    "modelo": "León e-Racer",
+    "tecnologia": "Analógico",
+    "fabricante": "Scalextric",
+    "referencia": "U10424S300"
+  },
+  {
+    "id": 24,
+    "nombre": "Renault 5 Turbo",
+    "imagen": "vehiculo_24.jpg",
+    "marca": "Renault",
+    "modelo": "5 Turbo",
+    "tecnologia": "Analógico",
+    "fabricante": "Scalextric",
+    "referencia": "U10411S300"
+  },
+  {
+    "id": 25,
+    "nombre": "Renault Alpine 110",
+    "imagen": "vehiculo_25.jpg",
+    "marca": "Renault",
+    "modelo": "Alpine 110",
+    "tecnologia": "Analógico",
+    "fabricante": "Scalextric",
+    "referencia": "U10238S300"
+  },
+  {
+    "id": 26,
+    "nombre": "Porsche 935 K2",
+    "imagen": "vehiculo_26.jpg",
+    "marca": "Porsche",
+    "modelo": "935 K2",
+    "tecnologia": "Analógico",
+    "fabricante": "Sideways",
+    "referencia": "RC SW0074"
+  },
+  {
+    "id": 27,
+    "nombre": "Mercedes 190 E",
+    "imagen": "vehiculo_27.jpg",
+    "marca": "Mercedes",
+    "modelo": "190 E",
+    "tecnologia": "Analógico",
+    "fabricante": "Slot.it",
+    "referencia": "CA44d"
+  },
+  {
+    "id": 28,
+    "nombre": "Bentley Continental GT3",
+    "imagen": "vehiculo_28.jpg",
+    "marca": "Bentley",
+    "modelo": "Continental GT3",
+    "tecnologia": "Analógico",
+    "fabricante": "SuperSlot",
+    "referencia": "H4057A"
+  },
+  {
+    "id": 29,
+    "nombre": "BMW E30 M3",
+    "imagen": "vehiculo_29.jpg",
+    "marca": "BMW",
+    "modelo": "E30 M3",
+    "tecnologia": "Analógico",
+    "fabricante": "SuperSlot",
+    "referencia": "H4168"
+  },
+  {
+    "id": 30,
+    "nombre": "Lamborghini Centenario",
+    "imagen": "vehiculo_30.jpg",
+    "marca": "Lamborghini",
+    "modelo": "Centenario",
+    "tecnologia": "Analógico",
+    "fabricante": "SuperSlot",
+    "referencia": "H3460"
+  },
+  {
+    "id": 31,
+    "nombre": "Toyota Celica Safari",
+    "imagen": "vehiculo_31.jpg",
+    "marca": "Toyota",
+    "modelo": "Celica Safari",
+    "tecnologia": "Analógico",
+    "fabricante": "Scalextric",
+    "referencia": "U10396S300"
+  },
+  {
+    "id": 32,
+    "nombre": "Ford Escort RS Cosworth",
+    "imagen": "vehiculo_32.jpg",
+    "marca": "Ford",
+    "modelo": "Escort RS Cosworth",
+    "tecnologia": "Analógico",
+    "fabricante": "Scalextric",
+    "referencia": "U10397S300"
+  },
+  {
+    "id": 33,
+    "nombre": "Lancia Fulvia HF",
+    "imagen": "vehiculo_33.jpg",
+    "marca": "Lancia",
+    "modelo": "Fulvia HF",
+    "tecnologia": "Analógico",
+    "fabricante": "Scalextric",
+    "referencia": "U10247S300"
+  },
+  {
+    "id": 34,
+    "nombre": "Opel Kadett GT/E",
+    "imagen": "vehiculo_34.jpg",
+    "marca": "Opel",
+    "modelo": "Kadett GT/E",
+    "tecnologia": "Analógico",
+    "fabricante": "RevoSlot",
+    "referencia": "RS0191"
+  },
+  {
+    "id": 35,
+    "nombre": "Talbot Sunbean Lotus Rally",
+    "imagen": "vehiculo_35.jpg",
+    "marca": "Talbot",
+    "modelo": "Sunbean Lotus Rally",
+    "tecnologia": "Analógico",
+    "fabricante": "Scalextric",
+    "referencia": "U10404S300"
+  },
+  {
+    "id": 36,
+    "nombre": "Fiat 131 Abarth",
+    "imagen": "vehiculo_36.jpg",
+    "marca": "Fiat",
+    "modelo": "131 Abarth",
+    "tecnologia": "Analógico",
+    "fabricante": "Scalextric",
+    "referencia": "U10489S300"
+  },
+  {
+    "id": 37,
+    "nombre": "McLaren 720 GT3",
+    "imagen": "vehiculo_37.jpg",
+    "marca": "McLaren",
+    "modelo": "720 GT3",
+    "tecnologia": "Analógico",
+    "fabricante": "Sideways",
+    "referencia": "RC-SWCAR04B"
+  },
+  {
+    "id": 38,
+    "nombre": "Aston Martin Vantage GT3",
+    "imagen": "vehiculo_38.jpg",
+    "marca": "Aston Martin",
+    "modelo": "Vantage GT3",
+    "tecnologia": "Advance",
+    "fabricante": "Scalextric",
+    "referencia": "E10428S300"
+  },
+  {
+    "id": 39,
+    "nombre": "Mercedes AMG GT3",
+    "imagen": "vehiculo_39.jpg",
+    "marca": "Mercedes",
+    "modelo": "AMG GT3",
+    "tecnologia": "Advance",
+    "fabricante": "Scalextric",
+    "referencia": "E10331S300"
+  },
+  {
+    "id": 40,
+    "nombre": "Mercedes 300 SEL 6.3 AMG",
+    "imagen": "vehiculo_40.jpg",
+    "marca": "Mercedes",
+    "modelo": "300 SEL 6.3 AMG",
+    "tecnologia": "Digital",
+    "fabricante": "Carrera",
+    "referencia": "20031036"
+  },
+  {
+    "id": 41,
+    "nombre": "Audi R8 GT3",
+    "imagen": "vehiculo_41.jpg",
+    "marca": "Audi",
+    "modelo": "R8 GT3",
+    "tecnologia": "Analógico",
+    "fabricante": "Ninco",
+    "referencia": "50670"
+  },
+  {
+    "id": 42,
+    "nombre": "MG A",
+    "imagen": "vehiculo_42.jpg",
+    "marca": "MG",
+    "modelo": "A",
+    "tecnologia": "Analógico",
+    "fabricante": "Scalextric",
+    "referencia": "U10318S300"
+  },
+  {
+    "id": 43,
+    "nombre": "Lancia Delta Integrale",
+    "imagen": "vehiculo_43.jpg",
+    "marca": "Lancia",
+    "modelo": "Delta Integrale",
+    "tecnologia": "Advance",
+    "fabricante": "Scalextric",
+    "referencia": "E10521S300"
+  },
+  {
+    "id": 44,
+    "nombre": "Ford Puma Rally 1 WRC",
+    "imagen": "vehiculo_44.jpg",
+    "marca": "Ford",
+    "modelo": "Puma Rally 1 WRC",
+    "tecnologia": "Advance",
+    "fabricante": "Scalextric",
+    "referencia": "E10451X300"
+  },
+  {
+    "id": 45,
+    "nombre": "BMW 2002i Radio Monte Carlo",
+    "imagen": "vehiculo_45.jpg",
+    "marca": "BMW",
+    "modelo": "2002i Radio Monte Carlo",
+    "tecnologia": "Analógico",
+    "fabricante": "Avant Slot",
+    "referencia": "51804"
+  },
+  {
+    "id": 46,
+    "nombre": "Ford Ford GT40 Mk II",
+    "imagen": "vehiculo_46.jpg",
+    "marca": "Ford",
+    "modelo": "Ford GT40 Mk II",
+    "tecnologia": "Analógico",
+    "fabricante": "SuperSlot",
+    "referencia": "C3916"
+  },
+  {
+    "id": 47,
+    "nombre": "Ford Ford Escort MK.I RSR",
+    "imagen": "vehiculo_47.jpg",
+    "marca": "Ford",
+    "modelo": "Ford Escort MK.I RSR",
+    "tecnologia": "Analógico",
+    "fabricante": "SuperSlot",
+    "referencia": "C4421"
+  },
+  {
+    "id": 48,
+    "nombre": "Toyota Yaris WRC",
+    "imagen": "vehiculo_48.jpg",
+    "marca": "Toyota",
+    "modelo": "Yaris WRC",
+    "tecnologia": "Advance",
+    "fabricante": "Escalextric",
+    "referencia": "E10524S300"
+  },
+  {
+    "id": 49,
+    "nombre": "BMW M1 PROCAR",
+    "imagen": "vehiculo_49.jpg",
+    "marca": "BMW",
+    "modelo": "M1 PROCAR",
+    "tecnologia": "Analógico",
+    "fabricante": "Carrera",
+    "referencia": "20027716"
+  },
+  {
+    "id": 50,
+    "nombre": "Alfa Romeo 155 V6 Ti",
+    "imagen": "vehiculo_50.jpg",
+    "marca": "Alfa Romeo",
+    "modelo": "155 V6 Ti",
+    "tecnologia": "Analógico",
+    "fabricante": "Slot.it",
+    "referencia": "CA45C"
+  },
+  {
+    "id": 51,
+    "nombre": "Opel Manta 400 Gr. B",
+    "imagen": "vehiculo_51.jpg",
+    "marca": "Opel",
+    "modelo": "Manta 400 Gr. B",
+    "tecnologia": "Analógico",
+    "fabricante": "Avant Slot",
+    "referencia": "51504"
+  },
+  {
+    "id": 52,
+    "nombre": "Renault 5 Turbo",
+    "imagen": "vehiculo_52.jpg",
+    "marca": "Renault",
+    "modelo": "5 Turbo",
+    "tecnologia": "Analógico",
+    "fabricante": "Fly Car Model",
+    "referencia": "88169"
+  },
+  {
+    "id": 53,
+    "nombre": "Lancia Stratos Turbo",
+    "imagen": "vehiculo_53.jpg",
+    "marca": "Lancia",
+    "modelo": "Stratos Turbo",
+    "tecnologia": "Analógico",
+    "fabricante": "Sideways",
+    "referencia": "SW63"
+  },
+  {
+    "id": 54,
+    "nombre": "Maserati MC GT4 - PWC",
+    "imagen": "vehiculo_54.jpg",
+    "marca": "Maserati",
+    "modelo": "MC GT4 - PWC",
+    "tecnologia": "Analógico",
+    "fabricante": "Slot.it",
+    "referencia": "CA48a"
+  },
+  {
+    "id": 55,
+    "nombre": "Ford Escort Cosworth",
+    "imagen": "vehiculo_55.jpg",
+    "marca": "Ford",
+    "modelo": "Escort Cosworth",
+    "tecnologia": "Analógico",
+    "fabricante": "Scalextric",
+    "referencia": "U10547S300"
+  },
+  {
+    "id": 56,
+    "nombre": "Seat Panda 60 Aniversario",
+    "imagen": "vehiculo_56.jpg",
+    "marca": "Seat",
+    "modelo": "Panda 60 Aniversario",
+    "tecnologia": "Analógico",
+    "fabricante": "Scalextric",
+    "referencia": "U10422S300"
+  },
+  {
+    "id": 57,
+    "nombre": "Citroen DS21",
+    "imagen": "vehiculo_57.jpg",
+    "marca": "Citroen",
+    "modelo": "DS21",
+    "tecnologia": "Analógico",
+    "fabricante": "Scalextric",
+    "referencia": "A10150S300"
+  },
+  {
+    "id": 58,
+    "nombre": "Porsche 911 GT3 R",
+    "imagen": "vehiculo_58.jpg",
+    "marca": "Porsche",
+    "modelo": "911 GT3 R",
+    "tecnologia": "Analógico",
+    "fabricante": "Scalextric UK",
+    "referencia": "C4522"
+  },
+  {
+    "id": 59,
+    "nombre": "Renault 8 TS",
+    "imagen": "vehiculo_59.jpg",
+    "marca": "Renault",
+    "modelo": "8 TS",
+    "tecnologia": "Analógico",
+    "fabricante": "Scalextric",
+    "referencia": "6379"
+  },
+  {
+    "id": 60,
+    "nombre": "Seat 127 Fura",
+    "imagen": "vehiculo_60.jpg",
+    "marca": "Seat",
+    "modelo": "127 Fura",
+    "tecnologia": "Analógico",
+    "fabricante": "Scalextric",
+    "referencia": "6434"
+  },
+  {
+    "id": 61,
+    "nombre": "Seat 1430",
+    "imagen": "vehiculo_61.jpg",
+    "marca": "Seat",
+    "modelo": "1430",
+    "tecnologia": "Analógico",
+    "fabricante": "Scalextric",
+    "referencia": "A10195S300"
+  },
+  {
+    "id": 62,
+    "nombre": "Seat 850",
+    "imagen": "vehiculo_62.jpg",
+    "marca": "Seat",
+    "modelo": "850",
+    "tecnologia": "Analógico",
+    "fabricante": "Scalextric",
+    "referencia": "U10560S300"
+  },
+  {
+    "id": 63,
+    "nombre": "Seat Cupra e-Racer",
+    "imagen": "vehiculo_63.jpg",
+    "marca": "Seat",
+    "modelo": "Cupra e-Racer",
+    "tecnologia": "Analógico",
+    "fabricante": "Scalextric",
+    "referencia": "U10526S300"
   }
 ]
