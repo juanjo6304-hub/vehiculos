@@ -1,0 +1,16 @@
+[
+  {
+    "nombre": "Vehículo 1",
+    "imagen": "vehiculo_1.jpg",
+    "marca": "Ford",
+    "modelo": "Focus",
+    "año": 2020
+  },
+  {
+    "nombre": "Vehículo 2",
+    "imagen": "vehiculo_2.jpg",
+    "marca": "Seat",
+    "modelo": "Ibiza",
+    "año": 2019
+  }
+]

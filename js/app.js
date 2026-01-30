@@ -1,0 +1,37 @@
+let vehiculos = [];
+let actual = 0;
+
+fetch("data/vehiculos.json")
+  .then(r => r.json())
+  .then(data => {
+    vehiculos = data;
+    mostrarVehiculo(0);
+  });
+
+function mostrarVehiculo(i) {
+  actual = i;
+
+  const v = vehiculos[i];
+
+  document.getElementById("titulo").textContent = v.nombre;
+  document.getElementById("foto").src = "img/" + v.imagen;
+
+  const datos = document.getElementById("datos");
+  datos.innerHTML = "";
+
+  for (const campo in v) {
+    if (campo !== "imagen" && campo !== "nombre") {
+      const p = document.createElement("p");
+      p.innerHTML = `<strong>${campo}:</strong> ${v[campo]}`;
+      datos.appendChild(p);
+    }
+  }
+}
+
+document.getElementById("prev").onclick = () => {
+  if (actual > 0) mostrarVehiculo(actual - 1);
+};
+
+document.getElementById("next").onclick = () => {
+  if (actual < vehiculos.length - 1) mostrarVehiculo(actual + 1);
+};
