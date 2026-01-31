@@ -26,6 +26,15 @@ function mostrarVehiculo(i) {
       datos.appendChild(p);
     }
   }
+  actualizarNav();
+}
+
+function actualizarNav() {
+  document.getElementById("contador").textContent =
+    `${actual + 1} / ${vehiculos.length}`;
+
+  document.getElementById("prev").disabled = actual === 0;
+  document.getElementById("next").disabled = actual === vehiculos.length - 1;
 }
 
 document.getElementById("prev").onclick = () => {
@@ -34,4 +43,8 @@ document.getElementById("prev").onclick = () => {
 
 document.getElementById("next").onclick = () => {
   if (actual < vehiculos.length - 1) mostrarVehiculo(actual + 1);
+};
+
+document.getElementById("home").onclick = () => {
+  mostrarVehiculo(0);
 };
