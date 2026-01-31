@@ -58,3 +58,20 @@ nav {
   color: white;
   font-size: 1rem;
 }
+
+.titulo {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 0.8rem 0.5rem;
+}
+
+#titulo-marca {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#titulo-modelo {
+  font-size: 1rem;
+  opacity: 0.9;
+}
