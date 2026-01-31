@@ -4,9 +4,21 @@ let actual = 0;
 fetch("data/vehiculos.json")
   .then(r => r.json())
   .then(data => {
-    vehiculos = data;
+
+    vehiculos = data.sort((a, b) => {
+      if (a.marca < b.marca) return -1;
+      if (a.marca > b.marca) return 1;
+
+      // misma marca → ordenar por modelo
+      if (a.modelo < b.modelo) return -1;
+      if (a.modelo > b.modelo) return 1;
+
+      return 0;
+    });
+
     mostrarVehiculo(0);
   });
+
 
 function mostrarVehiculo(i) {
   actual = i;
@@ -56,5 +68,6 @@ document.getElementById("next").onclick = () => {
 document.getElementById("home").onclick = () => {
   mostrarVehiculo(0);
 };
+
 
 
