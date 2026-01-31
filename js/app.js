@@ -13,7 +13,9 @@ function mostrarVehiculo(i) {
 
   const v = vehiculos[i];
 
-  document.getElementById("titulo").textContent = v.nombre;
+  document.getElementById("titulo-marca").textContent = v.marca;
+  document.getElementById("titulo-modelo").textContent = v.modelo;
+
   document.getElementById("foto").src = "img/" + v.imagen;
 
   const datos = document.getElementById("datos");
@@ -54,4 +56,5 @@ document.getElementById("next").onclick = () => {
 document.getElementById("home").onclick = () => {
   mostrarVehiculo(0);
 };
+
 
