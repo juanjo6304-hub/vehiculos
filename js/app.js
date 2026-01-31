@@ -18,14 +18,19 @@ function mostrarVehiculo(i) {
 
   const datos = document.getElementById("datos");
   datos.innerHTML = "";
+  
+for (const campo in v) {
+  if (campo !== "imagen" && campo !== "nombre" && campo !== "id") {
 
-  for (const campo in v) {
-    if (campo !== "imagen" && campo !== "nombre") {
-      const p = document.createElement("p");
-      p.innerHTML = `<strong>${campo}:</strong> ${v[campo]}`;
-      datos.appendChild(p);
-    }
+    const etiqueta =
+      campo.charAt(0).toUpperCase() + campo.slice(1);
+
+    const p = document.createElement("p");
+    p.innerHTML = `<strong>${etiqueta}:</strong> ${v[campo]}`;
+    datos.appendChild(p);
   }
+}
+
 
   actualizarNav(); // ✅ AQUÍ, fuera del for
 }
@@ -49,3 +54,4 @@ document.getElementById("next").onclick = () => {
 document.getElementById("home").onclick = () => {
   mostrarVehiculo(0);
 };
+
