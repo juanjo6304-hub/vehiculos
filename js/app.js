@@ -26,7 +26,8 @@ function mostrarVehiculo(i) {
       datos.appendChild(p);
     }
   }
-  actualizarNav();
+
+  actualizarNav(); // ✅ AQUÍ, fuera del for
 }
 
 function actualizarNav() {
