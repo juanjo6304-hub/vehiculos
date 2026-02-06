@@ -629,4 +629,35 @@
     "fabricante": "Scalextric",
     "referencia": "U10526S300"
   }
+    {
+    "id": 64,
+    "nombre": "BMW 3.0 CSL",
+    "imagen": "vehiculo_61.jpg",
+    "marca": "BMW",
+    "modelo": "3.0 CSL",
+    "tecnologia": "Analógico",
+    "fabricante": "Fly",
+    "referencia": "V2002"
+  },
+  {
+    "id": 65,
+    "nombre": "Porsche 911 GT3",
+    "imagen": "vehiculo_62.jpg",
+    "marca": "Porsche",
+    "modelo": "911 GT3",
+    "tecnologia": "Analógico",
+    "fabricante": "Scalextric",
+    "referencia": "U10476S500A"
+  },
+  {
+    "id": 66,
+    "nombre": "Porsche 911 GT3",
+    "imagen": "vehiculo_63.jpg",
+    "marca": "Porsche",
+    "modelo": "911 GT3",
+    "tecnologia": "Analógico",
+    "fabricante": "Scalextric",
+    "referencia": "U10476S500B"
+  }
 ]
+
