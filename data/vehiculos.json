@@ -632,7 +632,7 @@
   {
     "id": 64,
     "nombre": "BMW 3.0 CSL",
-    "imagen": "vehiculo_61.jpg",
+    "imagen": "vehiculo_64.jpg",
     "marca": "BMW",
     "modelo": "3.0 CSL",
     "tecnologia": "Analógico",
@@ -642,7 +642,7 @@
   {
     "id": 65,
     "nombre": "Porsche 911 GT3",
-    "imagen": "vehiculo_62.jpg",
+    "imagen": "vehiculo_65.jpg",
     "marca": "Porsche",
     "modelo": "911 GT3",
     "tecnologia": "Analógico",
@@ -652,7 +652,7 @@
   {
     "id": 66,
     "nombre": "Porsche 911 GT3",
-    "imagen": "vehiculo_63.jpg",
+    "imagen": "vehiculo_66.jpg",
     "marca": "Porsche",
     "modelo": "911 GT3",
     "tecnologia": "Analógico",
@@ -660,5 +660,6 @@
     "referencia": "U10476S500B"
   }
 ]
+
 
 
