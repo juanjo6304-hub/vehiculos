@@ -628,8 +628,8 @@
     "tecnologia": "Analógico",
     "fabricante": "Scalextric",
     "referencia": "U10526S300"
-  }
-    {
+  },
+  {
     "id": 64,
     "nombre": "BMW 3.0 CSL",
     "imagen": "vehiculo_61.jpg",
@@ -660,4 +660,5 @@
     "referencia": "U10476S500B"
   }
 ]
+
 
