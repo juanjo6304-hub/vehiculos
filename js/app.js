@@ -69,5 +69,8 @@ document.getElementById("home").onclick = () => {
   mostrarVehiculo(0);
 };
 
+const foto = document.getElementById("foto");
 
-
+foto.addEventListener("click", () => {
+  foto.classList.toggle("zoom");
+});
