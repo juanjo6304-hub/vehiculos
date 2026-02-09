@@ -1,4 +1,4 @@
-const CACHE = "vehiculos-v13";
+const CACHE = "vehiculos-v14";
 
 const FILES = [
   "./",
@@ -19,6 +19,7 @@ self.addEventListener("fetch", e => {
     caches.match(e.request).then(r => r || fetch(e.request))
   );
 });
+
 
 
 
