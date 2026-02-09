@@ -75,3 +75,24 @@ nav {
   font-size: 1rem;
   opacity: 0.9;
 }
+
+#foto {
+  max-width: 100%;
+  height: auto;
+  touch-action: manipulation;
+  -webkit-user-drag: none;
+}
+
+#foto.zoom {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
+  background: black;
+  z-index: 2000;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
