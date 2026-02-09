@@ -658,8 +658,15 @@
     "tecnologia": "Analógico",
     "fabricante": "Scalextric",
     "referencia": "U10476S500B"
+  },
+  {
+    "id": 67,
+    "nombre": "McLaren 720B GT3",
+    "imagen": "vehiculo_67.jpg",
+    "marca": "McLaren",
+    "modelo": "720B GT3",
+    "tecnologia": "Analógico",
+    "fabricante": "Sideways",
+    "referencia": "RC-SWCAR04A"
   }
 ]
-
-
-
