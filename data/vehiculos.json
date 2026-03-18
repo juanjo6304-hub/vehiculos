@@ -668,5 +668,25 @@
     "tecnologia": "Analógico",
     "fabricante": "Sideways",
     "referencia": "RC-SWCAR04A"
-  }
+  },
+  {
+    "id": 68,
+    "nombre": "Mercedes-Benz 300 SL coupé",
+    "imagen": "vehiculo_68.jpg",
+    "marca": "Mercedes-Benz",
+    "modelo": "300 SL coupé",
+    "tecnologia": "Analógico",
+    "fabricante": "Scalextric",
+    "referencia": "U10568S300"
+  },
+  {
+    "id": 69,
+    "nombre": "Skoda Fabia WRC2",
+    "imagen": "vehiculo_69.jpg",
+    "marca": "Skoda",
+    "modelo": "Fabia WRC2",
+    "tecnologia": "Advance",
+    "fabricante": "Scalextric",
+    "referencia": "E10566S300"
+  }  
 ]
