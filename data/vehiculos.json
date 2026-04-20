@@ -688,5 +688,55 @@
     "tecnologia": "Advance",
     "fabricante": "Scalextric",
     "referencia": "E10566S300"
+  }, 
+    {
+    "id": 70,
+    "nombre": "Mini Cooper 1.275",
+    "imagen": "vehiculo_70.jpg",
+    "marca": "Mini Cooper",
+    "modelo": "1.275",
+    "tecnologia": "Analógico",
+    "fabricante": "Scalextric",
+    "referencia": "A10193S300"
+  },
+  {
+    "id": 71,
+    "nombre": "Seat Toledo GT",
+    "imagen": "vehiculo_71.jpg",
+    "marca": "Seat",
+    "modelo": "Toledo GT",
+    "tecnologia": "Analógico",
+    "fabricante": "Scalextric",
+    "referencia": "U10366S300"
+  },
+  {
+    "id": 72,
+    "nombre": "Audi A4 DTM",
+    "imagen": "vehiculo_72.jpg",
+    "marca": "Audi",
+    "modelo": "A4 DTM",
+    "tecnologia": "Analógico",
+    "fabricante": "Scalextric",
+    "referencia": "U10302S300"
+  },
+  {
+    "id": 73,
+    "nombre": "Renault Megane RS 275 Trophy",
+    "imagen": "vehiculo_73.jpg",
+    "marca": "Renault",
+    "modelo": "Megane RS 275 Trophy",
+    "tecnologia": "Analógico",
+    "fabricante": "Scalextric",
+    "referencia": "A10253S300"
+  },
+  {
+    "id": 74,
+    "nombre": "Mercedes AMG C-Coupé DTM",
+    "imagen": "vehiculo_74.jpg",
+    "marca": "Mercedes",
+    "modelo": "AMG C-Coupé DTM",
+    "tecnologia": "Analógico",
+    "fabricante": "Scalextric",
+    "referencia": "A10212S300"
   }  
 ]
