@@ -1,6 +1,7 @@
 let vehiculos = [];
 let actual = 0;
 
+// Cargar datos
 fetch("data/vehiculos.json")
   .then(r => r.json())
   .then(data => {
@@ -9,7 +10,6 @@ fetch("data/vehiculos.json")
       if (a.marca < b.marca) return -1;
       if (a.marca > b.marca) return 1;
 
-      // misma marca → ordenar por modelo
       if (a.modelo < b.modelo) return -1;
       if (a.modelo > b.modelo) return 1;
 
@@ -17,9 +17,10 @@ fetch("data/vehiculos.json")
     });
 
     mostrarVehiculo(0);
+    activarBuscador(); // 🔥 importante
   });
 
-
+// Mostrar vehículo
 function mostrarVehiculo(i) {
   actual = i;
 
@@ -32,23 +33,23 @@ function mostrarVehiculo(i) {
 
   const datos = document.getElementById("datos");
   datos.innerHTML = "";
-  
-for (const campo in v) {
-  if (campo !== "imagen" && campo !== "nombre" && campo !== "id") {
 
-    const etiqueta =
-      campo.charAt(0).toUpperCase() + campo.slice(1);
+  for (const campo in v) {
+    if (campo !== "imagen" && campo !== "nombre" && campo !== "id") {
 
-    const p = document.createElement("p");
-    p.innerHTML = `<strong>${etiqueta}:</strong> ${v[campo]}`;
-    datos.appendChild(p);
+      const etiqueta =
+        campo.charAt(0).toUpperCase() + campo.slice(1);
+
+      const p = document.createElement("p");
+      p.innerHTML = `<strong>${etiqueta}:</strong> ${v[campo]}`;
+      datos.appendChild(p);
+    }
   }
+
+  actualizarNav();
 }
 
-
-  actualizarNav(); // ✅ AQUÍ, fuera del for
-}
-
+// Navegación
 function actualizarNav() {
   document.getElementById("contador").textContent =
     `${actual + 1} / ${vehiculos.length}`;
@@ -69,6 +70,7 @@ document.getElementById("home").onclick = () => {
   mostrarVehiculo(0);
 };
 
+// Zoom imagen
 const foto = document.getElementById("foto");
 
 foto.addEventListener("click", () => {
@@ -76,15 +78,24 @@ foto.addEventListener("click", () => {
   document.body.classList.toggle("no-scroll");
 });
 
-document.getElementById("buscar").addEventListener("input", (e) => {
-  const texto = e.target.value.toLowerCase();
+// Buscador
+function activarBuscador() {
+  const input = document.getElementById("buscar");
 
-  const index = vehiculos.findIndex(v =>
-    v.modelo.toLowerCase().includes(texto) ||
-    v.marca.toLowerCase().includes(texto)
-  );
+  if (!input) return;
 
-  if (index !== -1) {
-    mostrarVehiculo(index);
-  }
-});
+  input.addEventListener("input", (e) => {
+    const texto = e.target.value.toLowerCase().trim();
+
+    if (texto === "") return;
+
+    const index = vehiculos.findIndex(v =>
+      (v.modelo && v.modelo.toLowerCase().includes(texto)) ||
+      (v.marca && v.marca.toLowerCase().includes(texto))
+    );
+
+    if (index !== -1) {
+      mostrarVehiculo(index);
+    }
+  });
+}
