@@ -738,5 +738,35 @@
     "tecnologia": "Analógico",
     "fabricante": "Scalextric",
     "referencia": "A10212S300"
+  }, 
+    {
+    "id": 75,
+    "nombre": "Seat 850",
+    "imagen": "vehiculo_75.jpg",
+    "marca": "Seat",
+    "modelo": "850",
+    "tecnologia": "Analógico",
+    "fabricante": "Scalextric",
+    "referencia": "U10613S300"
+  },
+  {
+    "id": 76,
+    "nombre": "Mitsubishi Lancer Evo V",
+    "imagen": "vehiculo_76.jpg",
+    "marca": "Mitsubishi",
+    "modelo": "Lancer Evo V",
+    "tecnologia": "Analógico",
+    "fabricante": "Scaleauto",
+    "referencia": "SC-6367R"
+  },
+  {
+    "id": 77,
+    "nombre": "Volvo 850 Estate",
+    "imagen": "vehiculo_77.jpg",
+    "marca": "Volvo",
+    "modelo": "850 Estate",
+    "tecnologia": "Analógico",
+    "fabricante": "Superslot",
+    "referencia": "H4597"
   }  
 ]
