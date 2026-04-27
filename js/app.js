@@ -6,7 +6,7 @@ fetch("data/vehiculos.json")
   .then(r => r.json())
   .then(data => {
 
-    vehiculos = data.vehiculos.sort((a, b) => {
+    vehiculos = data.sort((a, b) => {
       if (a.marca < b.marca) return -1;
       if (a.marca > b.marca) return 1;
 
