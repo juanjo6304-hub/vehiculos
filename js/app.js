@@ -1,6 +1,14 @@
 let vehiculos = [];
 let actual = 0;
 
+// Normalizar texto (quita acentos)
+function normalizar(texto) {
+  return texto
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
+}
+
 // Cargar datos
 fetch("data/vehiculos.json")
   .then(r => r.json())
@@ -86,16 +94,22 @@ function activarBuscador() {
   if (!input || !contenedor) return;
 
   input.addEventListener("input", (e) => {
-    const texto = e.target.value.toLowerCase().trim();
+    const texto = normalizar(e.target.value.trim());
 
     contenedor.innerHTML = "";
 
     if (texto === "") return;
 
     const resultados = vehiculos.filter(v =>
-      (v.modelo && v.modelo.toLowerCase().includes(texto)) ||
-      (v.marca && v.marca.toLowerCase().includes(texto))
+      normalizar(v.modelo || "").includes(texto) ||
+      normalizar(v.marca || "").includes(texto)
     );
+
+    // 🔴 si no hay resultados
+    if (resultados.length === 0) {
+      contenedor.innerHTML = "<div class='resultado'>No encontrado</div>";
+      return;
+    }
 
     resultados.slice(0, 10).forEach(v => {
       const div = document.createElement("div");
