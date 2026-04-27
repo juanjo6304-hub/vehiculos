@@ -1,4 +1,4 @@
-const CACHE = "vehiculos-v17";
+const CACHE = "vehiculos-v18";
 
 const FILES = [
   "./",
