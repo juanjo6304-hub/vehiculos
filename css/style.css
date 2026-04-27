@@ -106,7 +106,7 @@ body.no-scroll {
   text-align: center;
   background: #f5f5f5;
   position: relative;
-  z-index: 10;
+  z-index: 1000;
 }
 
 #buscar {
@@ -122,15 +122,20 @@ body.no-scroll {
   border-color: #666;
 }
 
-/* --- Resultados buscador --- */
+/* --- Resultados buscador (CLAVE) --- */
 #resultados {
+  position: absolute;
+  left: 5%;
+  width: 90%;
   background: white;
   max-height: 200px;
   overflow-y: auto;
-  margin-top: 0.5rem;
+  margin-top: 0.3rem;
   border-radius: 8px;
   border: 1px solid #ccc;
   text-align: left;
+  z-index: 2000;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 .resultado {
