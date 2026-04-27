@@ -5,7 +5,7 @@ fetch("data/vehiculos.json")
   .then(r => r.json())
   .then(data => {
 
-    vehiculos = data.sort((a, b) => {
+    vehiculos = data.vehiculos.sort((a, b) => {
       if (a.marca < b.marca) return -1;
       if (a.marca > b.marca) return 1;
 
@@ -74,4 +74,17 @@ const foto = document.getElementById("foto");
 foto.addEventListener("click", () => {
   foto.classList.toggle("zoom");
   document.body.classList.toggle("no-scroll");
+});
+
+document.getElementById("buscar").addEventListener("input", (e) => {
+  const texto = e.target.value.toLowerCase();
+
+  const index = vehiculos.findIndex(v =>
+    v.modelo.toLowerCase().includes(texto) ||
+    v.marca.toLowerCase().includes(texto)
+  );
+
+  if (index !== -1) {
+    mostrarVehiculo(index);
+  }
 });
