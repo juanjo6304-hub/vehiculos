@@ -13,6 +13,7 @@ header {
 
 main {
   padding: 1rem;
+  padding-bottom: 90px; /* espacio para barra inferior */
 }
 
 img {
@@ -59,6 +60,7 @@ nav {
   font-size: 1rem;
 }
 
+/* --- Título --- */
 .titulo {
   background: #111;
   color: white;
@@ -76,6 +78,7 @@ nav {
   opacity: 0.9;
 }
 
+/* --- Imagen --- */
 #foto {
   max-width: 100%;
   height: auto;
@@ -102,6 +105,8 @@ body.no-scroll {
   padding: 0.5rem;
   text-align: center;
   background: #f5f5f5;
+  position: relative;
+  z-index: 10;
 }
 
 #buscar {
@@ -115,4 +120,29 @@ body.no-scroll {
 
 #buscar:focus {
   border-color: #666;
+}
+
+/* --- Resultados buscador --- */
+#resultados {
+  background: white;
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.resultado {
+  padding: 0.5rem;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.resultado:last-child {
+  border-bottom: none;
+}
+
+.resultado:hover {
+  background: #f0f0f0;
 }
