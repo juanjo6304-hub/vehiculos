@@ -17,7 +17,7 @@ fetch("data/vehiculos.json")
     });
 
     mostrarVehiculo(0);
-    activarBuscador(); // 🔥 importante
+    activarBuscador();
   });
 
 // Mostrar vehículo
@@ -78,24 +78,38 @@ foto.addEventListener("click", () => {
   document.body.classList.toggle("no-scroll");
 });
 
-// Buscador
+// 🔍 Buscador con lista de resultados
 function activarBuscador() {
   const input = document.getElementById("buscar");
+  const contenedor = document.getElementById("resultados");
 
-  if (!input) return;
+  if (!input || !contenedor) return;
 
   input.addEventListener("input", (e) => {
     const texto = e.target.value.toLowerCase().trim();
 
+    contenedor.innerHTML = "";
+
     if (texto === "") return;
 
-    const index = vehiculos.findIndex(v =>
+    const resultados = vehiculos.filter(v =>
       (v.modelo && v.modelo.toLowerCase().includes(texto)) ||
       (v.marca && v.marca.toLowerCase().includes(texto))
     );
 
-    if (index !== -1) {
-      mostrarVehiculo(index);
-    }
+    resultados.slice(0, 10).forEach(v => {
+      const div = document.createElement("div");
+      div.className = "resultado";
+      div.textContent = `${v.marca} ${v.modelo}`;
+
+      div.onclick = () => {
+        const index = vehiculos.indexOf(v);
+        mostrarVehiculo(index);
+        contenedor.innerHTML = "";
+        input.value = "";
+      };
+
+      contenedor.appendChild(div);
+    });
   });
 }
