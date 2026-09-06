@@ -768,5 +768,15 @@
     "tecnologia": "Analógico",
     "fabricante": "Superslot",
     "referencia": "H4597"
-  }  
+  }, 
+  {
+    "id": 78,
+    "nombre": "Seat Ibiza Bimotor",
+    "imagen": "vehiculo_78.jpg",
+    "marca": "Seat",
+    "modelo": "Ibiza Bimotor",
+    "tecnologia": "Analógico",
+    "fabricante": "Scalextric",
+    "referencia": "U10619S300"
+  }
 ]
